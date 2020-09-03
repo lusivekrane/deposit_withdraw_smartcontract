@@ -16,6 +16,7 @@ function withdrawAllFund()public payable returns(uint){
   uint toTransfer = varBalance;
   varBalance = 0;
   msg.sender.transfer(toTransfer);
+  return toTransfer;
 }
 
 
